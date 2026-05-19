@@ -365,17 +365,12 @@ species_description_plots <- list.files("data/species_descriptions/", full.names
   })
   
 
-
-```
-
 ### Combine plots into one figure
 
-```{r}
 combined <- wrap_plots(species_description_plots, ncol = 4) +
   plot_layout(guides = "collect") & theme(legend.position = "bottom")
 
 
 combined
-
 
 ```
